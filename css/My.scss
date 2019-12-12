@@ -1,38 +1,31 @@
 @import "css/init.css";
 
 $mainColor: Black;
+
 $baseFontSize: 14px;
-$rootPath: "http://localhost:8000/";
-$baseClassName: "col";
 
-.#{$baseClassName}1
-{
-    font-size: $baseFontSize;
-}
-
-.#{$baseClassName}2
-{
-  font-size: $baseFontSize;
-}
 
 /* Basics */
-html {
-    font-family: 'Open Sans', verdana, helvetica, sans-serif;
-    font-size: 10px + 14px;
-    font-size: $baseFontSize;
+html
+{
+  font-family: 'Open Sans', verdana, helvetica, sans-serif;
+  font-size: $mainColor;
 }
-body {
-    background: lighten($mainColor, 50%);
-    background-image: url("#{$rootPath}images/back.jpg")
+body
+{
+  background: $mainColor;
 }
-h1 {
-    font-size: $baseFontSize + 10;
+h1
+{
+  font-size: $baseFontSize + 10;
 }
-h2 {
-    font-size: $baseFontSize + 4;
+h2
+{
+  font-size: $baseFontSize + 4;
 }
-h3 {
-    font-size: $baseFontSize + 2;
+h3
+{
+ font-size: $baseFontSize + 2;
 }
 
 /* Layout */
@@ -57,41 +50,42 @@ header h1
   font-family: 'Share', cursive;
   color: Blue;
 }
-nav
-{
-  font-size: 14px;
-  font-weight: bold;
-  float: right;
-}
-nav ul
-{
-  list-style-type: none;
-}
-nav ul li
-{
-  float: left;
-  margin: 2px;
-}
-nav ul li a
-{
-  text-decoration: none;
-}
-nav ul li a:hover
-{
-  text-decoration: underline;
+nav {
+    font:{
+        size:14px;
+        weight: bold;
+        }
+    float: right;
+    ul
+    {
+      list-style-type: none;
+       li
+       {
+         float: left;
+          margin: 2px;
+          a
+          {
+            text-decoration: none;
+            &:hover
+          {
+            text-decoration: underline;
+          }
+       }
+    }
+  }
 }
 footer
 {
   font-size: 9px;
   text-align: center;
   color: Blue;
-}
-footer nav
-{
-  float: none;
-  display: inline-block;
-  font-size: 9px;
-  vertical-align: middle;
+  nav
+  {
+   float: none;
+   display: inline-block;
+   font-size: 9px;
+   vertical-align: middle;
+  }
 }
 
 /* Forms */
