@@ -94,7 +94,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Form.html" />
-    <Content Include="css\init.css" />
+    <Content Include="css\colors.scss" />
+    <None Include="css\init.scss" />
     <None Include="css\My.scss" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -112,6 +113,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
