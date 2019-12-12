@@ -96,6 +96,7 @@
     <Content Include="Form.html" />
     <Content Include="css\colors.scss" />
     <None Include="css\init.scss" />
+    <Content Include="css\mixins.scss" />
     <None Include="css\My.scss" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
